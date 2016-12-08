@@ -4,7 +4,7 @@ body{
 }
 
 .page-wrapper {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
@@ -63,6 +63,8 @@ body{
     CSS for the page text, which is mostly just information about me
 **/
 .info-block {
+    width: 70%;
+    margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 15px;
@@ -73,4 +75,5 @@ body{
 .info-text {
     font-size: 20px;
     font-family: 'Libre Baskerville', serif;
+    line-height: 1.8;
 }
