@@ -1,3 +1,7 @@
+/**
+    CSS for the index home page of my personal website
+**/
+
 /** General Body Formatting **/
 body{
     background-color: white;
@@ -6,45 +10,6 @@ body{
 .page-wrapper {
     width: 80%;
     margin: auto;
-}
-
-/**
-    CSS for the navigation bar at the top of the page
-**/
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-.nav-links > li {
-    float: left;
-}
-
-.nav-links > li > a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 14px;
-    padding-right: 14px;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Libre Baskerville', serif;
-}
-
-.nav-links > li > a:hover {
-    background-color: #fafafa;
-}
-
-.nav-links > li > a:focus {
-    background-color: #c7ccd6;
-}
-.active {
-    background-color: #c7ccd6;
 }
 
 /**

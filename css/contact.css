@@ -1,0 +1,23 @@
+/**
+    CSS for the contact page of my personal website
+**/
+
+/** Body CSS **/
+body {
+    background-color: white;
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/** Title CSS **/
+.page-title {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 60px;
+    font-family: 'Libre Baskerville', bold;
+}
