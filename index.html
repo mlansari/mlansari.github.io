@@ -7,6 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- other information about the page -->
+        <meta name="description" content="Home page of Mohamed Lansari's personal website">
+        <meta name="author" content="Mohamed Lansari">
+        <!-- could add the favicon here -->
+
         <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,26 +20,33 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+        <!-- Include my font -->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen|Libre+Baskerville" rel="stylesheet">
+
+        <!-- Add the CSS of the page -->
+        <link href="css/home.css" rel="stylesheet">
+
         <!-- Title in head of the page -->
-        <title>Bootstrap Example</title>
+        <title>Mohamed Lansari</title>
     </head>
+
     <body>
         <!-- Starting body -->
-        <div class="container-fluid">
-            <div class="header">
-                <div class="header-bar">
-                    <!-- This is the header title of the page. -->
-                    <h2 class="header-text">Mohamed Lansari</h2>
-                    
-                    <!-- These are the navigation buttons on the page header -->
-                    <nav>
-                        <ul class="header-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                        </ul>
-                    </nav>
-                </div>  
+        <!-- All of the content of the page -->
+        <div class="page-wrapper">
+            <div class="header-bar">
+                <!-- Header links of the page -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Title of the page -->
+            <div class="page-title">
+                <h1 class="title-heading">Mohamed Lansari</h1>
             </div>
         </div>
-
     </body>
 </html>

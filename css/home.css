@@ -1,0 +1,50 @@
+/** General Body Formatting **/
+body{
+    background-color: white;
+}
+
+.page-wrapper {
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+}
+
+/**
+    CSS for the navigation bar at the top of the page
+**/
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.nav-links > li {
+    float: left;
+}
+
+.nav-links > li > a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/**
+    CSS for the page title (my name)
+**/
+.page-title {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 48px;
+    font-family: 'Libre Baskerville', bold;
+}
