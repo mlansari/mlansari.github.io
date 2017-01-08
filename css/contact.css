@@ -21,3 +21,90 @@ body {
     font-size: 60px;
     font-family: 'Libre Baskerville', bold;
 }
+
+/** Contact Information List CSS **/
+.contact-list {
+    width: 100%;
+    margin: auto;
+}
+
+.email-form {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/** Email Form CSS **/
+.input-unit {
+    margin: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+    
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+input[type=submit] {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: none;
+    text-shadow: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid darkgrey;
+    border-top: 2px solid darkgrey;
+}
+
+input[type=submit]:hover {
+    box-shadow: 3px 3px 2px grey;
+}
+
+input[type=submit]:focus {
+    outline: none;
+    box-shadow: 3px 3px 2px grey;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+
+    resize: none;
+    border: none;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+textarea:focus {
+    outline: none;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}

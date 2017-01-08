@@ -49,10 +49,29 @@
             </div>
             <!-- Title of the page -->
             <div class="page-title">
-                <h1 class="title-heading">Contact Information</h1>
+                <h1 class="title-heading">Contact Me</h1>
             </div>
-
-
+            <!-- Contact information entries -->
+            <div class="contact-list">
+                <!-- TODO: need to add an action page to send this info to -->
+                <form class="email-form" method="post">
+                    <div class="input-unit">
+                        Name: <br>
+                        <input type="text" name="name" class="textbox"><br>
+                    </div>
+                    <div class="input-unit">
+                        Email: <br>
+                        <input type="email" name="email" class="textbox"><br>
+                    </div>
+                    <div class="input-unit">
+                        Message: <br>
+                        <textarea name="message" rows="6"></textarea>
+                    </div>
+                    <div class="input-unit">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
