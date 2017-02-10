@@ -26,13 +26,18 @@
     font-family: 'Libre Baskerville', serif;
 }
 
-.nav-links > li > a:hover {
+.nav-links > li > a:hover:not(.active) {
     background-color: #fafafa;
 }
 
 .nav-links > li > a:focus {
     background-color: #c7ccd6;
 }
+
 .active {
     background-color: #c7ccd6;
+}
+
+.right {
+    float: right;
 }

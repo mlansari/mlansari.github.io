@@ -1,0 +1,23 @@
+/**
+    The CSS for the work page of the site
+**/
+
+/** Primary body CSS **/
+body {
+    background: white;
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/** The heading CSS **/
+.page-title {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 60px;
+    font-family: "Libre Baskerville", serif;
+}
