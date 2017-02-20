@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+     <!-- Required meta tags always come first -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- other information about the page -->
+        <meta name="description" content="Home page of Mohamed Lansari's personal website">
+        <meta name="author" content="Mohamed Lansari">
+        <!-- could add the favicon here -->
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Imports -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Include my fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen|Libre+Baskerville" rel="stylesheet">
+
+        <!-- Add the CSS of the page -->
+        <link href="{{ url_for('static', filename='css/navbar.css') }}" rel="stylesheet">
+
+        <!-- Title in head of the page -->
+        <title>Mohamed Lansari</title>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- Insert the navigation block here -->
+            <!--{% block nav %}{% endblock %}-->
+            <div class="header-bar">
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            {% if activePage == 'Home' %}
+                            <a class="active" href="{{ url_for('home') }}">Home</a>
+                            {% else %}
+                            <a href="{{ url_for('home') }}">Home</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if activePage == 'Work' %}
+                            <a class="active" href="{{ url_for('work') }}">Work</a>
+                            {% else %}
+                            <a href="{{ url_for('work') }}">Work</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if activePage == 'Blog' %}
+                            <a class="active" href="{{ url_for('blog') }}">Blog</a>
+                            {% else %}
+                            <a href="{{ url_for('blog') }}">Blog</a>
+                            {% endif %}
+                        </li>
+                        <li style="float:right" class="right">
+                            {% if activePage == 'Contact' %}
+                            <a class="active" href="{{ url_for('contact') }}">Contact</a>
+                            {% else %}
+                            <a href="{{ url_for('contact') }}">Contact</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- The main body content of the page -->
+            {% block content %}{% endblock %}
+            
+        </div>
+    </body>
+</html>

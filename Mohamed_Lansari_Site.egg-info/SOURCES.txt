@@ -1,0 +1,7 @@
+MANIFEST.in
+Mohamed_Lansari_Site.egg-info/PKG-INFO
+Mohamed_Lansari_Site.egg-info/SOURCES.txt
+Mohamed_Lansari_Site.egg-info/dependency_links.txt
+Mohamed_Lansari_Site.egg-info/requires.txt
+Mohamed_Lansari_Site.egg-info/top_level.txt
+mlansari/mlansari.py
