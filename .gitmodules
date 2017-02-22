@@ -1,0 +1,3 @@
+[submodule "mlansari/static/hideandseek"]
+	path = mlansari/static/hideandseek
+	url = https://github.com/mlansari/HideAndSeek.git
