@@ -13,7 +13,7 @@ def home():
 @APP.route("/work")
 def work():
     """Access the work template"""
-    return render_template("home.html", activePage='home')
+    return render_template("work.html", activePage='work')
 
 @APP.route("/contact")
 def contact():

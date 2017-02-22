@@ -21,3 +21,18 @@ body {
     font-size: 60px;
     font-family: "Libre Baskerville", serif;
 }
+
+/** Section title CSS **/
+.project-title {
+    text-align: left;
+}
+
+.project-heading {
+    font-size: 24px;
+    font-family: "Libre Baskerville", serif;
+}
+
+/** Content CSS **/
+.dynamic-content {
+    text-align: center;
+}
