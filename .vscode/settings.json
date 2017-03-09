@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:/Users/mlans13/Programming/Website/mlansari.github.io/venv/scripts/python.exe"
+    "python.pythonPath": "c:/Users/mlans13/Programming/Website/mlansari.github.io/venv/scripts/python.exe",
+    "python.linting.enabled": false
 }

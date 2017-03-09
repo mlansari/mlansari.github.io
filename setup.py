@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name='Mohamed Lansari Site',
+    name='mlansari',
     packages=['mlansari'],
     include_package_data=True,
     install_requires=[

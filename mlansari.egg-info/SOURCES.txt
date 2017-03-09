@@ -1,0 +1,9 @@
+MANIFEST.in
+mlansari/__init__.py
+mlansari/config.py
+mlansari/webview.py
+mlansari.egg-info/PKG-INFO
+mlansari.egg-info/SOURCES.txt
+mlansari.egg-info/dependency_links.txt
+mlansari.egg-info/requires.txt
+mlansari.egg-info/top_level.txt
