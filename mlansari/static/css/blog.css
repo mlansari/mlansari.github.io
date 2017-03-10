@@ -1,0 +1,32 @@
+/**
+    CSS for the blog section of my personal site
+**/
+
+/** Formatting for the main title **/
+.page-title {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 60px;
+    font-family: 'Libre Baskerville', bold;
+}
+
+/** Formatting of blog entries as list elements **/
+.entries {
+    float: left;
+}
+
+.entries > li {
+    font-family: 'Libre Bakerville';
+}
+
+.entries > li.blog-entry-title {
+    font-size: 36;
+    color: purple;
+}
+
+#no-content {
+    font-size: 60;
+    color: hotpink;
+}

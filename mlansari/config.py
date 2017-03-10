@@ -11,7 +11,10 @@ class Config(object):
 class DevConfig(Config):
     """The object version used for debugging, versus the production config"""
     DEBUG = True
+    USERNAME='testing'
+    PASSWORD='password'
 
 class LiveConfig(Config):
     """The object version used for the actual run of the site"""
+    # It's up to you to decide what config values to use for this
     pass

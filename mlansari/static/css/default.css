@@ -41,3 +41,15 @@
 .right {
     float: right;
 }
+
+/**
+    Default CSS for the outside of the rest of the page
+**/
+body {
+    background-color: white;
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: auto;
+}
