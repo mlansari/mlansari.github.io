@@ -6,5 +6,24 @@
 <div class='page-title'>
     <h1 class='title-heading'>Login</h1>
 </div>
+<!-- Actual login form -->
+<form class="login-form" method="post" action="{{ url_for('login') }}">
+    <div class="input-unit">
+        Username: <br>
+        <input type="text" name="username" class="textbox"><br>
+    </div>
+    <div class="input-unit">
+        Password: <br>
+        <input type="password" name="password" class="textbox"><br>
+    </div>
+    <div class="input-unit">
+        <input type="submit" value="Login">
+    </div>
+</form>
+
+<!-- Print login error message -->
+<div class="error-message">
+{% if error %}<h1 class='potential-error'>{{ error }}</h1>{% endif %}
+</div>
 
 {% endblock %}

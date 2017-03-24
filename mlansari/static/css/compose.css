@@ -1,0 +1,13 @@
+/**
+CSS for composition URL
+**/
+
+/** Title **/
+.page-title {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 60px;
+    font-family: 'Libre Baskerville', bold;
+}

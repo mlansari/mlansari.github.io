@@ -1,3 +1,4 @@
 venv/
 .vscode
 mlansari/mlansari.db
+mlansari/__pycache__

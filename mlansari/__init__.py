@@ -25,7 +25,7 @@ app.config.from_object(config.DevConfig)            # comment this to run live
 ##########################
 # Database Functionality #
 ##########################
-## Note that the database exists for the purpose of blog functionality
+## Note that the database exists for the purpose of blog functionality (now moved to within its own file)
 
 # def init_db():
 #     """Initialize the database into existence"""

@@ -7,12 +7,14 @@ class Config(object):
     DEBUG = False
     TESTING = False
     DATABASE = os.path.join(app.root_path, 'mlansari.db')
+    SECRET_KEY=None         # This needs to be set
 
 class DevConfig(Config):
     """The object version used for debugging, versus the production config"""
     DEBUG = True
     USERNAME='testing'
     PASSWORD='password'
+    SECRET_KEY="AEIOU"
 
 class LiveConfig(Config):
     """The object version used for the actual run of the site"""

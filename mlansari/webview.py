@@ -38,19 +38,19 @@ def login():
     error = None
     # handle login attempts
     if request.method == 'POST':
-        if request.form['username'] != APP.config['USERNAME']:
-            error = 'invalid username'
-        elif request.form['password'] != APP.config['PASSWORD']:
-            error = 'invalid password'
+        if request.form['username'] != app.config['USERNAME']:
+            error = 'Invalid Username'
+        elif request.form['password'] != app.config['PASSWORD']:
+            error = 'Invalid Password'
         else:           # this is the success case
             session['logged_in'] = True
-            return redirect(url_for(composeBlogEntry))
-    else:
-        return render_template("login.html")
+            return redirect(url_for('composeBlogEntry'))
+    
+    return render_template("login.html", error=error)
 
 
 # this is another hidden page, for the actual writing of entries into the blog
-@app.route('/<username>/compose')
-def composeBlogEntry(username):
+@app.route('/compose')
+def composeBlogEntry():
     """Used to go to the page which is used to compose and process blog entries"""
-    pass
+    return render_template("compose.html")
