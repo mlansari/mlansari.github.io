@@ -2,8 +2,27 @@
 {% block content %}
 <!-- Import the CSS for this page -->
 <link href="{{ url_for('static', filename='css/compose.css') }}" rel='stylesheet'>
-<!-- Title secion of the page -->
+<!-- Title section of the page -->
 <div class='page-title'>
     <h1 class='title-heading'>Compose</h1>
 </div>
+
+<!-- Composition section of the page -->
+<form class="compose-form" method="post" action="{{ url_for('addBlogEntry') }}">
+    <div class="input-unit">
+        Title: <br>
+        <input type="text" name="title" class="textbox"><br>
+    </div>
+    <div class="input-unit">
+        Subtitle: <br>
+        <input type="text" name="subtitle" class="textbox"><br>
+    </div>
+    <div class="input-unit">
+        Text (Markdown): <br>
+        <textarea name="message" rows="10"></textarea>
+    </div>
+    <div class="input-unit">
+        <input type="submit" value="Publish">
+    </div>
+</form>
 {% endblock %}

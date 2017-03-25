@@ -13,20 +13,43 @@
 }
 
 /** Formatting of blog entries as list elements **/
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 .entries {
-    float: left;
+    /*position: relative;*/
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
 }
 
 .entries > li {
-    font-family: 'Libre Bakerville';
+    font-family: 'Libre Bakerville', bold;
 }
 
-.entries > li.blog-entry-title {
-    font-size: 36;
-    color: purple;
+.blog-entry-title {    
+    text-align: center;
+    font-size: 54px;
+    color: black;
+}
+
+.blog-entry-subtitle {
+    font-size: 36px;
+    color: black;
+}
+
+.blog-entry-text {
+    font-size: 24px;
+    color: green;
 }
 
 #no-content {
     font-size: 60;
-    color: hotpink;
+    color: darkred;
 }

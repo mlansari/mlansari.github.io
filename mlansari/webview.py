@@ -1,7 +1,7 @@
 """The base file for the site"""
 import os
 import sqlite3
-from flask import Flask, url_for, render_template, request, redirect, session
+from flask import Flask, url_for, render_template, request, redirect, session, abort, flash
 from mlansari import app, dbhandler
 
 @app.route("/")
@@ -26,7 +26,7 @@ def contact():
 def blog():
     """Access the blog template"""
     db = dbhandler.get_db()
-    cur = db.execute('select title, subtitle from blog order by id desc')    # fetch the info from the database
+    cur = db.execute('select title, subtitle, text from blog order by id desc')    # fetch the info from the database
     entries = cur.fetchall()            # perform the built fetch command
     return render_template("blog.html", blog=entries)
 
@@ -44,13 +44,35 @@ def login():
             error = 'Invalid Password'
         else:           # this is the success case
             session['logged_in'] = True
+            flash("logged in")
             return redirect(url_for('composeBlogEntry'))
-    
-    return render_template("login.html", error=error)
+    if not session['logged_in']:
+        return render_template("login.html", error=error)
+    else:
+        return redirect(url_for('composeBlogEntry'))
 
 
 # this is another hidden page, for the actual writing of entries into the blog
-@app.route('/compose')
+@app.route('/compose', methods=['GET'])
 def composeBlogEntry():
     """Used to go to the page which is used to compose and process blog entries"""
-    return render_template("compose.html")
+    if session['logged_in']:
+        return render_template("compose.html")
+    else:
+        return redirect(url_for('login'))
+    
+@app.route('/add', methods=['POST'])
+def addBlogEntry():
+    """Used to add the blog entries created in the compose page"""
+    if not session['logged_in']:
+        abort(401)
+    db = dbhandler.get_db()
+    db.execute('insert into blog (title, subtitle, text) values (?, ?, ?)',
+               [request.form['title'], request.form['subtitle'], request.form['message']])
+    db.commit()
+    flash("new entry added")
+
+    # for now, log out automatically when you log in (temporary?)
+    session['logged_in'] = False
+
+    return redirect(url_for('blog'))

@@ -11,3 +11,78 @@ CSS for composition URL
     font-size: 60px;
     font-family: 'Libre Baskerville', bold;
 }
+
+/** Form formatting **/
+.compose-form {
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.input-unit {
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid darkgrey;
+    border-top: 2px solid darkgrey;
+}
+
+input[type=submit] {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: none;
+    text-shadow: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+    box-shadow: 3px 3px 2px grey;
+}
+
+input[type=submit]:focus {
+    outline: none;
+    box-shadow: 3px 3px 2px grey;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    margin-top: 10px;
+
+    resize: vertical;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}

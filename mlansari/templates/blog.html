@@ -7,12 +7,14 @@
     <h1 class="title-heading">My Thoughts</h1>
 </div>
 <!-- Content of the page -->
+<div class="content">
 <ul class="entries">
 {% for post in blog %}
 <li class='blog-entry'>
-    <h2 class='blog-entry-title'>{{ blog.title }}</h2>
-    <h3 class='blog-entry-subtitle'>{{ blog.subtitle }}</h3>
+    <h2 class='blog-entry-title'>{{ post.title }}</h2>
+    <h3 class='blog-entry-subtitle'>{{ post.subtitle }}</h3>
     <!-- Try to make one of these a hyperlink to the actual location of the full blog post -->
+    <div class='blog-entry-text'>{{ post.text|safe }}</div>
 </li>
 {% else %}
 <li>
@@ -20,5 +22,5 @@
 </li>
 {% endfor %}
 </ul>
-
+</div>
 {% endblock %}
